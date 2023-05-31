@@ -1,0 +1,276 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.navbar::before {
+  content: "";
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  height: 70%;
+  width: 1500px;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.navbar ul {
+  display: flex;
+  margin: 10px 10px;
+}
+
+.navbar ul li {
+  list-style: none;
+  font-size: 1rem;
+}
+
+.navbar ul li.item {
+  color: rgb(0, 0, 0);
+  font-family: "Silkscreen";
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 40px;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar ul li.item:hover {
+  background-color: white;
+  color: black;
+}
+
+/* .navbar ul li.button {
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 2px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+ } */
+.topbar-logo {
+  margin: 10px 10px;
+}
+
+.topbar-logo img {
+  border-radius: 30px;
+  height: 120px;
+  margin: -1px -1px;
+}
+
+/* below navbar */
+#home::before {
+  content: "";
+  position: absolute;
+  background: url("banner.jpg") no-repeat center center/cover;
+  height: 850px;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+
+#home h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  /* font-family: "Inspiration"; */
+  font-weight: bolder;
+  /* text-shadow: 5px -3px 3px rgb(247 247 250); */
+}
+
+.h-primary {
+  font-family: "Inspiration";
+
+  font-size: 8rem;
+  padding: 180px;
+  margin-right: 36rem;
+}
+
+.h-secondary {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.8rem;
+  padding: 23px;
+  margin: 1px 410px;
+  /* position: relative; */
+}
+.h-tertiary {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.8rem;
+  padding: 23px;
+  margin: 5px 530px;
+  /* position: relative; */
+}
+
+.collections {
+  max-width: 1400px;
+  margin: 30px auto;
+  /* border: 1ps solid black; */
+  /* height: 40px; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.collections-items {
+  flex-grow: 1;
+  /* all elements will be in one available space */
+  flex-basis: 0;
+  /* while adding text the width changes hence to avoid it we used flex-basis */
+  min-width: 25%;
+  border: 1px solid rgb(255, 251, 251);
+  box-sizing: border-box;
+  height: 400px;
+  margin: 8px 8px;
+  background-size: cover;
+  background-position: center;
+}
+#item-banner:hover {
+  opacity: 1;
+}
+
+.collections-items:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.collections-inner {
+  display: flex;
+  justify-content: center;
+  /* aligned horizontally */
+  align-items: center;
+  /* alligned vertically */
+  height: 170%;
+}
+
+.collections-inner div {
+  padding: 5px 10px;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 5px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn {
+  padding: 5px 10px;
+  color: rgb(255, 255, 255);
+  background: transparent;
+  border: 4px solid white;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+/* @media (max-width:1000px) {
+   .collections-item{
+      min-width: 50%;
+   }
+ }
+ @media (max-width:800px) {
+   .collections-item{
+      min-width: 100%;
+   }
+ } */
+.additional {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.5px;
+  /* background-color: rgb(248, 248, 0); */
+  background: url("flag3.webp") no-repeat center center/cover;
+  color: rgb(0, 0, 0);
+  font-size: 2.4rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  /* margin-bottom: 10px; */
+}
+/* #additional{
+   display: block;
+   height: 190%;
+   scroll-padding-bottom: 100px;
+ } */
+/* .additionalex img{
+   background-size: cover;
+    background-position: center;
+/* width: 1919px;
+height: 299px; */
+
+.additionalex::before {
+  content: "";
+  position: absolute;
+  background: url("exclusive1.webp") no-repeat center center/cover;
+  margin-top: 3px;
+  height: 299px;
+  width: 1519px;
+  z-index: -1;
+  opacity: 1;
+}
+
+.footer1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  margin-top: 40px;
+  padding: 0px 60px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  background-color: black;
+  color: rgb(255, 255, 0);
+  font-size: 3rem;
+  font-family: "Bangers";
+  font-weight: 500;
+  line-height: 1;
+}
+.center {
+  text-align: center;
+}
+.footer {
+  margin-top: 300px;
+  border: 2px solid black;
+  background: #b0aaaa;
+  width: auto;
+  height: 100px;
+
+  display: block;
+  overflow: hidden;
+}
+.footer p {
+  text-align: center;
+  font-family: fantasy;
+  font-size: 2rem;
+  margin-top: 35px;
+}
+.subscriber {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: rgb(251, 2, 2);
+  background: black;
+  border: 1px solid white;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.subscriber:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
