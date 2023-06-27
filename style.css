@@ -128,7 +128,14 @@
   margin: 8px 8px;
   background-size: cover;
   background-position: center;
+  transition-property: transform;
+  transition-duration: 300ms;
 }
+
+.collections-items:hover {
+  transform: scale(1.05);
+}
+
 #item-banner:hover {
   opacity: 1;
 }
